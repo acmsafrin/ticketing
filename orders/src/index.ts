@@ -6,6 +6,7 @@ import { TicketCreatedListener } from './event/listeners/ticket-created-listener
 import { TicketUpdatedListener } from './event/listeners/ticket-updated-listener';
 import { natsWrapper } from './nats-wrapper';
 const start = async () => {
+  console.log('start up Orders ');
   if (!process.env.JWT_KEY) {
     throw new Error('JWT_KEY must be defined');
   }
